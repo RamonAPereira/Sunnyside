@@ -1,0 +1,43 @@
+.grid-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 90vh;
+}
+.gallery-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0 7rem;
+
+  &__title {
+    color: $very-dark-desaturated-blue;
+    font-family: $fraunces;
+    font-size: 2rem;
+  }
+
+  &__paragraph {
+    color: $dark-grayish-blue;
+    font-family: $barlow;
+  }
+
+  &__link {
+    display: inline-block;
+    max-width: fit-content;
+    font-family: $fraunces;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    color: $very-dark-desaturated-blue;
+    border-bottom: 6px rgba(250, 212, 0, 0.2) solid;
+    border-radius: 5px;
+
+    &:hover {
+      border-color: $yellow;
+      transition: border 0.3s ease;
+    }
+  }
+}
+.image {
+  background: url("../images/desktop/image-transform.jpg") no-repeat center
+    center/cover;
+}

@@ -10,8 +10,42 @@ a {
   text-decoration: none;
   color: inherit; }
 
-body {
+p {
   font-size: 18px; }
+
+.grid-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 90vh; }
+
+.gallery-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0 7rem; }
+  .gallery-content__title {
+    color: #23303e;
+    font-family: "Fraunces", serif;
+    font-size: 2rem; }
+  .gallery-content__paragraph {
+    color: #5a636c;
+    font-family: "Barlow", sans-serif; }
+  .gallery-content__link {
+    display: inline-block;
+    max-width: fit-content;
+    font-family: "Fraunces", serif;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    color: #23303e;
+    border-bottom: 6px rgba(250, 212, 0, 0.2) solid;
+    border-radius: 5px; }
+    .gallery-content__link:hover {
+      border-color: #fad400;
+      transition: border 0.3s ease; }
+
+.image {
+  background: url("../images/desktop/image-transform.jpg") no-repeat center center/cover; }
 
 .header {
   position: absolute;
@@ -85,7 +119,8 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 4rem; }
+  gap: 4rem;
+  margin-top: 8vh; }
   .banner-content__title {
     font-family: "Fraunces", serif;
     font-size: 3.13rem;

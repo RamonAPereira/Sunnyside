@@ -1,0 +1,101 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+body {
+  font-size: 18px; }
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  padding: 1.5rem 2rem;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw; }
+
+.logo {
+  max-width: 100%;
+  height: auto;
+  flex-shrink: 0; }
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center; }
+  .nav-menu__link {
+    margin-right: 2.5rem;
+    font-size: 1.3rem;
+    color: white;
+    font-family: "Barlow", sans-serif;
+    padding: 0.5rem 1.8rem;
+    border-radius: 18px; }
+    .nav-menu__link:hover {
+      background-color: rgba(255, 255, 255, 0.4);
+      color: white;
+      transition: all 0.2s ease-in; }
+  .nav-menu__btn {
+    background-color: white;
+    color: #333; }
+
+.hamburger-menu {
+  display: none; }
+
+@media (max-width: 865px) {
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 14vh;
+    right: 4vw;
+    left: 4vw;
+    height: 60vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: white; }
+    .nav-menu__link {
+      color: #5a636c;
+      margin-right: 0; }
+      .nav-menu__link:hover {
+        color: #a7abae;
+        transition: color 0.2s ease-in; }
+  .hamburger-menu {
+    display: block; } }
+
+.banner {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../images/desktop/image-header.jpg") no-repeat center center/cover; }
+
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 4rem; }
+  .banner-content__title {
+    font-family: "Fraunces", serif;
+    font-size: 3.13rem;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem; }
+
+.attribution {
+  font-size: 11px;
+  text-align: center; }
+
+.attribution a {
+  color: #3e52a3; }

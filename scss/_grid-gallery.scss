@@ -1,14 +1,19 @@
 .grid-gallery {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 90vh;
+  grid-template-rows: repeat(3, 90vh);
 }
 .gallery-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 2rem;
-  padding: 0 7rem;
+  padding: 0 5.8rem;
+
+  &--flex-end {
+    justify-content: start;
+    padding-top: 20rem;
+  }
 
   &__title {
     color: $very-dark-desaturated-blue;
@@ -35,9 +40,33 @@
       border-color: $yellow;
       transition: border 0.3s ease;
     }
+
+    &--red {
+      border-color: rgba(254, 120, 103, 0.2);
+
+      &:hover {
+        border-color: $soft-red;
+      }
+    }
+  }
+
+  &--bg-one {
+    background: url("../images/desktop/image-graphic-design.jpg") no-repeat
+      center center/cover;
+  }
+  &--bg-two {
+    background: url("../images/desktop/image-photography.jpg") no-repeat center
+      center/cover;
   }
 }
 .image {
-  background: url("../images/desktop/image-transform.jpg") no-repeat center
-    center/cover;
+  &__one {
+    background: url("../images/desktop/image-transform.jpg") no-repeat center
+      center/cover;
+  }
+
+  &__two {
+    background: url("../images/desktop/image-stand-out.jpg") no-repeat center
+      center/cover;
+  }
 }

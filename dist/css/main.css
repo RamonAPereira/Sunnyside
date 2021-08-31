@@ -16,14 +16,17 @@ p {
 .grid-gallery {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 90vh; }
+  grid-template-rows: repeat(3, 90vh); }
 
 .gallery-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 2rem;
-  padding: 0 7rem; }
+  padding: 0 5.8rem; }
+  .gallery-content--flex-end {
+    justify-content: start;
+    padding-top: 20rem; }
   .gallery-content__title {
     color: #23303e;
     font-family: "Fraunces", serif;
@@ -43,9 +46,20 @@ p {
     .gallery-content__link:hover {
       border-color: #fad400;
       transition: border 0.3s ease; }
+    .gallery-content__link--red {
+      border-color: rgba(254, 120, 103, 0.2); }
+      .gallery-content__link--red:hover {
+        border-color: #fe7867; }
+  .gallery-content--bg-one {
+    background: url("../images/desktop/image-graphic-design.jpg") no-repeat center center/cover; }
+  .gallery-content--bg-two {
+    background: url("../images/desktop/image-photography.jpg") no-repeat center center/cover; }
 
-.image {
+.image__one {
   background: url("../images/desktop/image-transform.jpg") no-repeat center center/cover; }
+
+.image__two {
+  background: url("../images/desktop/image-stand-out.jpg") no-repeat center center/cover; }
 
 .header {
   position: absolute;
@@ -104,6 +118,9 @@ p {
         transition: color 0.2s ease-in; }
   .hamburger-menu {
     display: block; } }
+
+main {
+  width: 100vw; }
 
 .banner {
   height: 100vh;

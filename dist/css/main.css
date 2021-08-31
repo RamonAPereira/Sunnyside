@@ -25,8 +25,8 @@ p {
   gap: 2rem;
   padding: 0 5.8rem; }
   .gallery-content--flex-end {
-    justify-content: start;
-    padding-top: 20rem; }
+    justify-content: flex-end;
+    padding-bottom: 3.5rem; }
   .gallery-content__title {
     color: #23303e;
     font-family: "Fraunces", serif;
@@ -60,6 +60,11 @@ p {
 
 .image__two {
   background: url("../images/desktop/image-stand-out.jpg") no-repeat center center/cover; }
+
+@media (max-width: 865px) {
+  .grid-gallery {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 90vh); } }
 
 .header {
   position: absolute;

@@ -11,8 +11,8 @@
   padding: 0 5.8rem;
 
   &--flex-end {
-    justify-content: start;
-    padding-top: 20rem;
+    justify-content: flex-end;
+    padding-bottom: 3.5rem;
   }
 
   &__title {
@@ -68,5 +68,12 @@
   &__two {
     background: url("../images/desktop/image-stand-out.jpg") no-repeat center
       center/cover;
+  }
+}
+
+@media (max-width: 865px) {
+  .grid-gallery {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 90vh);
   }
 }

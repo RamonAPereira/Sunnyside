@@ -70,7 +70,7 @@ p {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 90vh); }
   .gallery-content {
-    padding: 0 3rem; } }
+    padding: 0 1rem; } }
 
 .header {
   position: absolute;

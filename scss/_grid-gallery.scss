@@ -19,11 +19,19 @@
     color: $very-dark-desaturated-blue;
     font-family: $fraunces;
     font-size: 2rem;
+
+    &--cyan {
+      color: $dark-desatured-cyan;
+    }
   }
 
   &__paragraph {
     color: $dark-grayish-blue;
     font-family: $barlow;
+
+    &--cyan {
+      color: $dark-moderate-cyan;
+    }
   }
 
   &__link {
@@ -75,5 +83,8 @@
   .grid-gallery {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 90vh);
+  }
+  .gallery-content {
+    padding: 0 3rem;
   }
 }

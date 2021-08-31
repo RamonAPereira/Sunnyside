@@ -31,9 +31,13 @@ p {
     color: #23303e;
     font-family: "Fraunces", serif;
     font-size: 2rem; }
+    .gallery-content__title--cyan {
+      color: #25564b; }
   .gallery-content__paragraph {
     color: #5a636c;
     font-family: "Barlow", sans-serif; }
+    .gallery-content__paragraph--cyan {
+      color: #458c7e; }
   .gallery-content__link {
     display: inline-block;
     max-width: fit-content;
@@ -64,7 +68,9 @@ p {
 @media (max-width: 865px) {
   .grid-gallery {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 90vh); } }
+    grid-template-rows: repeat(6, 90vh); }
+  .gallery-content {
+    padding: 0 3rem; } }
 
 .header {
   position: absolute;

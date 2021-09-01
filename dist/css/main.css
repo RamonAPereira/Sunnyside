@@ -76,7 +76,7 @@ p {
 
 .testimonials {
   background: white;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -116,6 +116,13 @@ p {
     font-family: "Barlow", sans-serif;
     font-size: 0.9rem;
     color: #a7abae; }
+
+@media (max-width: 865px) {
+  .testimonials-cards {
+    flex-direction: column;
+    margin-bottom: 2rem; }
+  .testimonials-title {
+    margin-top: 2rem; } }
 
 .header {
   position: absolute;

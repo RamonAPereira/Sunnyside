@@ -1,6 +1,6 @@
 .testimonials {
   background: $white;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -50,5 +50,16 @@
     font-family: $barlow;
     font-size: 0.9rem;
     color: $grayish-blue;
+  }
+}
+
+@media (max-width: 865px) {
+  .testimonials-cards {
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+
+  .testimonials-title {
+    margin-top: 2rem;
   }
 }

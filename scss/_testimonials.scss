@@ -1,0 +1,54 @@
+.testimonials {
+  background: $white;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.testimonials-content {
+  max-width: 80vw;
+  text-align: center;
+}
+.testimonials-title {
+  font-family: $fraunces;
+  font-size: 1.0125rem;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: $grayish-blue;
+  margin-bottom: 3rem;
+}
+
+.testimonials-cards {
+  display: flex;
+  gap: 1rem;
+}
+
+.card {
+  //background: red;
+  padding: 0.5rem;
+
+  &__profile {
+    border-radius: 50%;
+    width: 5rem;
+    height: auto;
+  }
+
+  &__paragraph {
+    font-family: $barlow;
+    color: $very-dark-desaturated-blue;
+    line-height: 1.5;
+    margin: 2rem 0;
+  }
+
+  &__profile-name {
+    font-family: $fraunces;
+    font-size: 1.125rem;
+  }
+
+  &__profile-occupation {
+    font-family: $barlow;
+    font-size: 0.9rem;
+    color: $grayish-blue;
+  }
+}

@@ -39,7 +39,8 @@ p {
     font-family: "Barlow", sans-serif; }
     .gallery-content__paragraph--cyan {
       color: #458c7e;
-      text-align: center; }
+      text-align: center;
+      margin-bottom: 1rem; }
   .gallery-content__link {
     display: inline-block;
     max-width: fit-content;
@@ -120,7 +121,8 @@ p {
 @media (max-width: 865px) {
   .testimonials-cards {
     flex-direction: column;
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+    gap: 2rem; }
   .testimonials-title {
     margin-top: 2rem; } }
 

@@ -126,6 +126,24 @@ p {
   .testimonials-title {
     margin-top: 2rem; } }
 
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 60vh; }
+  .image-gallery__img-1 {
+    background: url("../images/desktop/image-gallery-milkbottles.jpg") no-repeat center center/cover; }
+  .image-gallery__img-2 {
+    background: url("../images/desktop/image-gallery-orange.jpg") no-repeat center center/cover; }
+  .image-gallery__img-3 {
+    background: url("../images/desktop/image-gallery-cone.jpg") no-repeat center center/cover; }
+  .image-gallery__img-4 {
+    background: url("../images/desktop/image-gallery-sugarcubes.jpg") no-repeat center center/cover; }
+
+@media (max-width: 865px) {
+  .image-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 50vh); } }
+
 .header {
   position: absolute;
   top: 0;

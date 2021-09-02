@@ -30,3 +30,38 @@
     grid-template-rows: repeat(2, 50vh);
   }
 }
+
+.footer {
+  background-color: $dark-moderate-cyan;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+}
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.navigation {
+  display: flex;
+  font-family: $barlow;
+  gap: 3rem;
+  font-size: 18px;
+  color: $dark-desatured-cyan;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}

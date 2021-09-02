@@ -38,7 +38,7 @@ p {
     color: #5a636c;
     font-family: "Barlow", sans-serif; }
     .gallery-content__paragraph--cyan {
-      color: #458c7e;
+      color: #91d4c6;
       text-align: center;
       margin-bottom: 1rem; }
   .gallery-content__link {
@@ -143,6 +143,36 @@ p {
   .image-gallery {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 50vh); } }
+
+.footer {
+  background-color: #91d4c6;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem; }
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem; }
+
+.navigation {
+  display: flex;
+  font-family: "Barlow", sans-serif;
+  gap: 3rem;
+  font-size: 18px;
+  color: #25564b; }
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 2rem; }
 
 .header {
   position: absolute;
